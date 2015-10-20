@@ -1,5 +1,6 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
+  display: block;
   box-sizing: border-box;
   font-size: 16px;
   font-family: sans-serif;
@@ -7,22 +8,42 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* General Text */
+/* General */
 
+body {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+/* Image Styling */
+
+.octocat-group {
+  float: left;
+  margin: 5px;
+  padding: 0;
+}
+
+.octocat-pics {
+  /*float: left;*/
+  width: 220px;
+  margin: 5px 0;
+  border: lightgrey 1px solid;
+}
+/* Bottom Line */
 h4 {
-  font-size: 12px;
+  /*float: left;*/
+  font-size: 9px;
   color: lightgrey;
 }
 
 p {
-  float: right;
-}
+  font-size: 9px;
+  text-align: right;
+margin-top: 0;
 
-.octocat-group {
-  display: inline-block;
 }
-
-.ocotocat-pics {
-  float: left;
-  border: grey 2px solid;
+.avatar {
+  width: 20px;
+  border-radius: 20%;
 }
