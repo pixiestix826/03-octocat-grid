@@ -1,7 +1,28 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+/* General Text */
+
+h4 {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+p {
+  float: right;
+}
+
+.octocat-group {
+  display: inline-block;
+}
+
+.ocotocat-pics {
+  float: left;
+  border: grey 2px solid;
 }
